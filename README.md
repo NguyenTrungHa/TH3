@@ -62,26 +62,7 @@ Mỗi kênh hoạt động theo ba trạng thái:
 
 Giới hạn mỗi lần chạy là **20 giây**.
 
-Luồng chính:
-
-```text
-DỪNG
-  |
-  | START + dữ liệu hợp lệ
-  v
-CHẠY
-  |
-  | STOP
-  +----------------------> DỪNG
-  |
-  | Hết 20 giây / dữ liệu lỗi
-  v
-LỖI
-  |
-  v
-DỪNG
-```
-
+![Sơ đồ máy trạng thái](fsm_diagram.png)
 
 ## 5. Timer phần cứng
 
